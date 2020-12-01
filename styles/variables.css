@@ -1,0 +1,43 @@
+:root {
+  --font-headers: "Sansita", sans-serif;
+  --font-content: "Open Sans", sans-serif;
+
+  --ajw-black: #2f3739;
+  --ajw-dark-black: #222729;
+  --ajw-white: #eeeeee;
+  --ajw-blue: #4bb2e4;
+  --color-button-hover: #4bb1e470;
+}
+
+@media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
+  body {
+    --color-text: var(--ajw-black);
+    --color-background: white;
+    --color-background-header: var(--ajw-white);
+    --color-border: var(--ajw-black);
+  }
+
+  .dark-mode{
+    --color-text: var(--ajw-white);
+    --color-background: var(--ajw-black);
+    --color-background-header: var(--ajw-dark-black);
+    --color-border: var(--ajw-white);
+  }
+
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --color-text: var(--ajw-white);
+    --color-background: var(--ajw-black);
+    --color-background-header: var(--ajw-dark-black);
+    --color-border: var(--ajw-white);
+  }
+
+  .light-mode{
+    --color-text: var(--ajw-black);
+    --color-background: white;
+    --color-background-header: var(--ajw-white);
+    --color-border: var(--ajw-black);
+  }
+}

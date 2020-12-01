@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Williams - Portfolio Site</title>
+    <link rel="icon" type= "image/png" href="assets/aw-favicon.png" />
+    <link rel="apple-touch-icon" type= "image/png" href="assets/aw-favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sansita:wght@700&display=swap" rel="stylesheet">
+
+  </head>
+  <body class="light-mode">
+    <header class='header'>
+      <div class="menu">
+
+      <label class="switch">
+        <input type="checkbox" />
+        <span class="slider"></span>
+      </label>
+
+      <img src="assets/profile-photo-blue-shirt-bw.jpg" class="profile-photo" />
+      <h1 class="name">Alex Williams</h1>
+      <h4 class="job-title">Full Stack Web Developer</h4>
+      <div class = "tabs">
+        <button class="tablinks" onclick="openPage(event, 'about')" id="defaultOpen">About</button>
+        <button class="tablinks" onclick="openPage(event, 'projects')">Projects</button>
+        <button class="tablinks" onclick="openPage(event, 'resume')">Résumé</button>
+      </div>
+    </header>
+    <!-- About -->
+    <section id="about" class="tabcontent">
+        <div class="about-me">
+          <h2 class="section-title">About Me</h2>
+          <p>
+            Hello! I am Alex. I am a software developer from Portland, OR. I love the creative process, solving complex problems, and collaborating with others.
+          </p>
+          <p>
+            Prior to learning to code, I worked in the investment consulting industry. I am a big fan of spreadsheets and quantitative analysis, but a desire to use my creative capacities has led me to pursue a career in web development. </p>
+          
+          <p> I have received an endorsement from Lambda School as a <a href="https://lambdaschool.com/courses/full-stack-web-development">Full Stack Web Developer</a>. My primary tech stack includes React / Redux on the frontend and Java / Spring on the backend, but I am always learning new technologies. I am currently building personal projects. Check out my the Projects tab above to see some of the projects that I have worked on or my GitHub to see my works in progress.
+          </p>
+          <p>
+           My professional journey wouldn’t be possible without the encouragement and help of others. If I can assist you with advice or mentoring, or if you would like to inquire about collaborating on a project, please don’t hesitate to reach out. 
+          </p>
+
+        </div>
+        <div class="contact">
+          <h2 class="section-title">Contact</h2>
+          <div class="contact-item-container">
+            <div class="contact-item">
+              <i href = "mailto: alexjwilliams1@gmail.com" class="fas fa-envelope-square"></i>
+              <a href = "mailto: alexjwilliams1@gmail.com">Email</a>
+            </div>
+            <div class="contact-item">
+              <i href="https://github.com/ajwpdx" class="fab fa-github-square" target="_blank"></i>
+              <a href="https://github.com/ajwpdx" target="_blank">GitHub</a>
+            </div>
+            <div class="contact-item">
+              <i href="https://www.linkedin.com/in/alexjwilliams/" class="fab fa-linkedin" target="_blank"></i>
+              <a href="https://www.linkedin.com/in/alexjwilliams/" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <!-- Projects -->
+      <section id="projects" class="tabcontent">
+        <div class="project">
+            <img src="https://images.unsplash.com/photo-1519211975560-4ca611f5a72a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+            
+          <div class="project-caption"> 
+              <h2 class="project-title">PostHere</h2>
+          <p>
+             A dashboard interface where authorized users can create, save, edit, and delete a reddit post before posting it on Reddit. It integrates an API designed by our data science team which predicts which subreddit would be the best fit for the post.             
+          </p>
+          <p>PostHere was a Lambda School buildweek project. I was a frontend developer on this project. We used React, Redux, Sass to build the frontend.</p>
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="https://images.unsplash.com/photo-1519211975560-4ca611f5a72a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+          <h2 class="project-title">PostHere</h2>
+          <p>
+            Welcome to my portfolio site. I am a full stack web developer with a
+            professional background in institutional investment consulting.
+            Please feel free to contact me if you think I could help out on a
+            project or if you would like to discuss my
+          </p>
+        </div>
+
+        <div class="project">
+          <img src="https://images.unsplash.com/photo-1519211975560-4ca611f5a72a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+          <h2 class="project-title">PostHere</h2>
+          <p>
+            Welcome to my portfolio site. I am a full stack web developer with a
+            professional background in institutional investment consulting.
+            Please feel free to contact me if you think I could help out on a
+            project or if you would like to discuss my
+          </p>
+        </div>
+
+      </section>
+      <!-- Resume -->
+      <section id="resume" class="tabcontent">
+
+      </section>
+  </body>
+  <script src="index.js"></script>
+</html>

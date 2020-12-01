@@ -1,0 +1,248 @@
+.header {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 50px;
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-background-header);
+}
+
+.profile-photo {
+  display: block;
+  width: 150px;
+  margin: 10px auto;
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background);
+}
+
+.tabs {
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tabs button {
+  font-size: 1.2rem;
+  background-color: inherit;
+  float: left;
+  border: none;
+  cursor: pointer;
+  padding: 20px 24px;
+  transition: 0.5s;
+  font-weight: 600;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* Change background color of buttons on hover */
+.tabs button:hover {
+  background-color: var(--color-button-hover);
+}
+
+/* Create an active/current tablink class */
+.tabs button.active {
+  background-color: var(--color-text);
+  color: var(--color-background-header);
+}
+
+.tabcontent {
+  display: none;
+}
+
+.tabcontent.active {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* About */
+#about {
+  max-width: 900px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.section-title {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.about-me {
+  width: 60%;
+  margin: 20px;
+}
+
+.contact {
+  width: 30%;
+  margin: 20px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  width: fit-content;
+}
+
+.contact-item:hover {
+  color: var(--ajw-blue);
+}
+
+.contact-item a {
+  line-height: 1.2rem;
+  padding: 0.5rem;
+  font-weight: 700;
+}
+
+#projects {
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  min-width: 270px;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  margin: 30px;
+}
+
+
+.project img {
+  width: 400px;
+  border-radius: 5px;
+  align-self: center;
+
+}
+
+.project-caption {
+  margin: 50px;
+}
+
+.project-title {
+  /* font-size: 2rem; */
+  border-bottom: 1px solid var(--color-border);
+}
+
+.project-title h2 {
+  display: inline-block;
+}
+
+.project-title h4 {
+  display: inline-block;
+}
+
+/* Dark Mode Switch */
+
+.switch {
+  position: absolute;
+  top: 27px;
+  right: 27px;
+  display: inline-block;
+  width: 66px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch input:checked + .slider {
+  background-color: #f2cd44;
+  box-shadow: 0 0 30px #f2cd44;
+}
+
+.switch input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  color: #f2cd44;
+  text-shadow: 1px 1px 8px #f2cd44;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-background);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+  border: 1px solid var(--color-border);
+}
+
+.slider::before {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  text-align: left;
+  font-weight: 900;
+  content: "\f186";
+  color: var(--color-background);
+  height: 24px;
+  width: 24px;
+  left: 3px;
+  padding: 3px 0px 0px 8px;
+  bottom: 3px;
+  background-color: var(--color-border);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+  line-height: 1.25;
+}
+
+@media (max-width: 700px) {
+  /* About */
+  #about {
+    flex-direction: column;
+  }
+
+  .section-title {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .about-me {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .contact {
+    width: 80%;
+    margin: 0 auto 40px;
+  }
+
+  .contact-item-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .contact-item {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .tabs button {
+    padding: 16px;
+  }
+  .contact-item a {
+    display: none;
+  }
+}
