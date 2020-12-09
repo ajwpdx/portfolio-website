@@ -52,3 +52,7 @@ p a {
 p a:hover{
   color: var(--color-button-hover)
 }
+
+button {
+  width: 150px;
+}
