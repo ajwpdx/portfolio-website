@@ -1,0 +1,63 @@
+/* Resume */
+#resume {
+    padding-top: 35px;
+    max-width: 900px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #resume button {
+    font-size: 1.2rem;
+    float: left;
+    border: none;
+    cursor: pointer;
+    margin: 25px;
+    padding: 20px 24px;
+    transition: 0.5s;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: var(--color-text);
+    color: var(--color-background-header);
+    /* font-family: var(--font-headers); */
+  }
+  
+  #resume button:hover {
+    background-color: var(--color-button-hover);
+    color: var(--color-text);
+  }
+  
+  #skills {
+    display: flex;
+    margin-top: 25px;
+    width: 95%;
+    justify-content: space-between;
+  }
+  
+  .skills-section {
+    margin: 10px;
+    width: 45%
+  }
+  
+  .skills-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 12px;
+    justify-content: space-around;
+  }
+  
+  .skills-icons img {
+    max-height: 4rem;
+    margin: 15px;
+  
+  }
+  
+  .skills-icons i {
+    font-size: 4rem;
+    margin: 15px;
+    cursor: auto;
+    width: 4rem;
+    text-align: center;
+  }
+  

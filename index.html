@@ -29,7 +29,7 @@
       <div class = "tabs">
         <button class="tablinks" onclick="openPage(event, 'about')" id="defaultOpen">About</button>
         <button class="tablinks" onclick="openPage(event, 'projects')">Projects</button>
-        <button class="tablinks" onclick="openPage(event, 'resume')">Résumé</button>
+        <button class="tablinks" onclick="openPage(event, 'resume')">Skills</button>
       </div>
     </header>
     <!-- About -->
@@ -71,46 +71,72 @@
       <!-- Projects -->
       <section id="projects" class="tabcontent">
         <div class="project">
-            <img src="https://images.unsplash.com/photo-1519211975560-4ca611f5a72a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+          <a href="https://main.d2rhibc2z6ms0a.amplifyapp.com/" target="_blank">
+            <img src="/assets/citircs.png" alt="">
+          </a>
+          
+        <div class="project-caption"> 
+            <h2 class="project-title">Citrics</h2>
+        <p>
+           An application used to compare statistics of major US cities. Users are able to search hundreds of major US cities and filter down by relevant statistics such as population and cost of living.
+        </p>
+        <p>Citrics was a Lambda School Labs project. I worked on a team of multiple cross-functional developers. We redesigned an existing project with the goal of improving data visualizations and user experience.</p>
+        </div>
+      </div>
+        
+      <div class="project">
+          <a href= "https://frontend-iota-sooty.vercel.app/" target="_blank">
+            <img  src="./assets/PostHere.PNG" alt="">
+          </a>
             
           <div class="project-caption"> 
               <h2 class="project-title">PostHere</h2>
           <p>
              A dashboard interface where authorized users can create, save, edit, and delete a reddit post before posting it on Reddit. It integrates an API designed by our data science team which predicts which subreddit would be the best fit for the post.             
           </p>
-          <p>PostHere was a Lambda School buildweek project. I was a frontend developer on this project. We used React, Redux, Sass to build the frontend.</p>
+          <p>PostHere was a Lambda School buildweek project. I was a lead front end developer on this project. We used React, Redux, Sass to build the app.</p>
           </div>
         </div>
 
-        <div class="project">
-          <img src="https://images.unsplash.com/photo-1519211975560-4ca611f5a72a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
-          
-        <div class="project-caption"> 
-            <h2 class="project-title">PostHere</h2>
-        <p>
-           A dashboard interface where authorized users can create, save, edit, and delete a reddit post before posting it on Reddit. It integrates an API designed by our data science team which predicts which subreddit would be the best fit for the post.             
-        </p>
-        <p>PostHere was a Lambda School buildweek project. I was a frontend developer on this project. We used React, Redux, Sass to build the frontend.</p>
-        </div>
-      </div>
 
       <div class="project">
-        <img src="https://images.unsplash.com/photo-1519211975560-4ca611f5a72a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+        <a href="https://wetmyplants-1.netlify.app/" target="_blank">
+          <img src="/assets/wet-my-plants.png" alt="">
+        </a>
         
       <div class="project-caption"> 
-          <h2 class="project-title">PostHere</h2>
+          <h2 class="project-title">Wet My Plants</h2>
       <p>
-         A dashboard interface where authorized users can create, save, edit, and delete a reddit post before posting it on Reddit. It integrates an API designed by our data science team which predicts which subreddit would be the best fit for the post.             
+         An application that enables a user to keep track of the watering frequency of their plants. Users can add, delete, and edit plants in their "Plant Family".
       </p>
-      <p>PostHere was a Lambda School buildweek project. I was a frontend developer on this project. We used React, Redux, Sass to build the frontend.</p>
+      <p>This was a Lambda School buildweek project and my first ever project as a front end developer! React and Sass were the primary tools used to build the front end functionality and styling.</p>
       </div>
     </div>
       </section>
       <!-- Resume -->
       <section id="resume" class="tabcontent">
-        <div class = "resume">
-          <h2>My Skills</h2>
-          <button>View My Résumé</button>
+        <form target="_blank" action="https://drive.google.com/file/d/1RbvQEvppCk50uw0R3glvtiTZLcKJdwZt/view?usp=sharing">
+          <button>My Résumé (PDF)</button>
+        </form>
+        <div id="skills">
+          <div class="skills-section">
+            <h2 class="section-title">Front End Stack</h2> 
+            <div class="skills-icons">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-sass"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-react"></i>
+              <img src="/assets/redux-logo.png" alt="Redux logo">
+            </div>
+          </div>
+          <div class="skills-section">
+            <h2 class="section-title">Back End Stack</h2> 
+            <div class="skills-icons">
+              <img src="./assets/java-logo.png" alt="Java logo">
+              <img src="./assets/spring-logo.svg" alt="Spring logo">
+              <img src="./assets/PostgreSQL.png" alt="PostgreSQL logo">
+            </div>
         </div>
       </section>
   </body>
