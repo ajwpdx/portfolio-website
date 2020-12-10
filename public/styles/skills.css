@@ -61,3 +61,18 @@
     text-align: center;
   }
   
+#my-stack {
+  display:none;
+}
+
+  @media (max-width: 425px) {
+    #skills .section-title {
+      display: none;
+    }
+
+    #my-stack{
+      display: inline;
+      text-align: center;
+      font-size: 2rem;
+    }
+  }
