@@ -55,8 +55,8 @@ p a:hover{
   color: var(--color-button-hover)
 }
 
-@media (max-width: 425px){
+/* @media (max-width: 425px){
   p {
   text-align: justify;
   }
-}
+} */
