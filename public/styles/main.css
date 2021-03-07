@@ -10,6 +10,7 @@
 .profile-photo {
   display: block;
   width: 150px;
+  height: 150px;
   margin: 10px auto;
   border-radius: 50%;
   padding: 5px;
